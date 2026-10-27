@@ -67,7 +67,7 @@
         /* Efeito de digitação JS */
         .typewriter {
             font-size: 1.5rem; color: var(--accent); min-height: 30px;
-            border-right: 2px solid var(--accent); white-space: nowrap;
+            border-right: 2px solid var(--accent); white-space: normal;
             overflow: hidden; padding-right: 5px;
             animation: blinkCursor 0.7s infinite normal;
         }
@@ -95,6 +95,7 @@
         }
         .card:hover { transform: translateY(-5px); border-color: var(--accent); }
         .card h3 { color: var(--accent); margin-top: 0; }
+        .card ul { margin: 0; padding-left: 20px; line-height: 1.6; }
         .card .date { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; display: block; }
 
         /* Tags de Habilidades */
@@ -149,20 +150,30 @@
         
         <section id="sobre" class="fade-in">
             <h2 class="section-title">Sobre Mim</h2>
-            <p>Atualmente Estagiário de TI no <strong>Confea</strong> e estudante de Ciência da Computação. Possuo experiência prática em infraestrutura de redes, automação e suporte corporativo. Tenho focado na resolução de problemas complexos através da criação de arquiteturas de monitoramento em tempo real e integração de sistemas consumindo APIs REST.</p>
-                <p>Profissional proativo, focado na otimização contínua de processos e com forte interesse em observabilidade, engenharia de infraestrutura, análise de dados (Python/SQL) e cibersegurança</p>
+            <p>Gosto de entender como a rede funciona por dentro e de transformar isso em visibilidade para quem opera a infraestrutura.</p>
+            <p>Sou estudante de Ciência da Computação no UniCEUB e estagiário de TI no <strong>Confea</strong>. Lá, reativei um PRTG que estava abandonado, com mais de 1.400 sensores, e construí painéis em tempo real no Grafana consumindo a API REST diretamente. Depois evoluí o projeto para telas de NOC, com um intermediário em Python (fila e cache) que eliminou os erros de concorrência na API.</p>
+            <p><strong>Estudando agora:</strong> Zabbix, Prometheus, Docker, Kubernetes e infraestrutura em nuvem. <strong>Interesses:</strong> redes, cloud, observabilidade e cibersegurança.</p>
             
             <h3 style="margin-top: 30px; color: var(--accent);">Hard Skills</h3>
             <div class="skills-grid">
-                <span class="skill-tag"><i class="fa-brands fa-python"></i> Python (Pandas, NumPy)</span>
+                <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Redes TCP/IP & VLANs</span>
+                <span class="skill-tag"><i class="fa-solid fa-ethernet"></i> Switches Cisco</span>
+                <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> PRTG & Grafana</span>
+                <span class="skill-tag"><i class="fa-solid fa-plug"></i> APIs REST</span>
+                <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL (Oracle, SQLite)</span>
+                <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Scripts Batch</span>
+                <span class="skill-tag"><i class="fa-solid fa-headset"></i> Suporte Técnico</span>
                 <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
-                <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL / Oracle</span>
-                <span class="skill-tag"><i class="fa-solid fa-server"></i> Infraestrutura de TI & Servidores</span>
-                <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Redes (Cisco, FortiGate) & Segurança</span>
-                <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Grafana, PRTG & APIs REST</span>
-                <span class="skill-tag"><i class="fa-solid fa-gears"></i> Automação de Processos</span>
-                <span class="skill-tag"><i class="fa-solid fa-file-excel"></i> Excel Intermediário & Power BI</span>
-                
+            </div>
+            <h3 style="margin-top: 30px; color: var(--accent);">Estudando</h3>
+            <div class="skills-grid">
+                <span class="skill-tag">Zabbix</span>
+                <span class="skill-tag">Prometheus</span>
+                <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag"><i class="fa-solid fa-cloud"></i> Cloud</span>
+
             </div>
         </section>
 
@@ -170,33 +181,24 @@
             <h2 class="section-title">Experiência Profissional</h2>
             
             <div class="card">
-                <h3>Estagiário de TI</h3>
-                <span class="date">Confea – Conselho Federal de Engenharia e Agronomia | 2026 – Presente</span>
-                <p>Atuação no suporte técnico aos usuários e auxílio nas rotinas diárias de infraestrutura de TI do conselho. Como projeto de destaque no estágio, estruturei o monitoramento da rede em tempo real, integrando o PRTG Network Monitor ao Grafana através de scripts em Python e consumo de APIs REST. Isso ajudou a equipe a ter uma visibilidade muito mais clara dos nossos ativos (FortiGate, F5 WAF, Switches Cisco e Servidores Windows).</p>
+                <h3>Estagiário de TI – Gerência de Inovações Sistêmicas</h3>
+                <span class="date">Confea – Conselho Federal de Engenharia e Agronomia | mai/2026 – Presente</span>
+                <ul>
+                    <li>Reativei e reestruturei o PRTG Network Monitor (1.400+ sensores), cobrindo firewall FortiGate, F5, switches Cisco e servidores Windows.</li>
+                    <li>Integrei PRTG e Grafana via API REST, com dashboards em tempo real de tráfego, VLANs, VPNs e disponibilidade de serviços.</li>
+                    <li>Desenvolvi em Python um intermediário com fila e cache que eliminou erros intermitentes da API, além de telas de NOC para TV.</li>
+                    <li>Configuração de portas em switches Cisco, suporte de conectividade (dados e telefonia) e atendimento a usuários internos.</li>
+                </ul>
             </div>
 
             <div class="card">
-                <h3>Assistente de Coordenação em Bancas de Concursos</h3>
-                <span class="date">Quadrix | Período Atual/Eventual</span>
-                <p>Responsável pelo suporte à organização e coordenação logística de processos seletivos e concursos públicos, garantindo o cumprimento de normas de segurança e sigilo institucional.</p>
-            </div>
-
-            <div class="card">
-                <h3>Membro de Banca de Heteroidentificação</h3>
-                <span class="date">Quadrix | Período Atual/Eventual</span>
-                <p>Atuação técnica em comissões de heteroidentificação, aplicando critérios legais e éticos para a validação de autodeclarações em concursos públicos, demonstrando compromisso com a integridade dos processos seletivos.</p>
-            </div>
-
-            <div class="card">
-                <h3>Supervisor de Bar</h3>
-                <span class="date">Restaurante Peccato Bistrô | 2023</span>
-                <p>Coordenação das atividades do bar, garantindo qualidade e padronização. Supervisão de equipe, controle de estoque e fluxo de caixa utilizando Excel. Implementação de planilhas para otimizar o processo de reposição de insumos, resultando em maior eficiência operacional.</p>
-            </div>
-
-            <div class="card">
-                <h3>Frentista</h3>
-                <span class="date">Shell Asa Sul | 2022</span>
-                <p>Atendimento direto aos clientes com agilidade e segurança. Controle básico de caixa e apoio nas rotinas operacionais, desenvolvendo fortes habilidades de comunicação, trabalho em equipe e resolução de problemas analíticos.</p>
+                <h3>Membro de Banca e Apoio Técnico em Concursos Públicos</h3>
+                <span class="date">Instituto Quadrix | dez/2025 – Presente (fins de semana)</span>
+                <ul>
+                    <li>Membro de banca de heteroidentificação, aplicando critérios legais e éticos com sigilo e imparcialidade.</li>
+                    <li>Suporte técnico no dia da prova: montagem e preparação do ambiente e resolução de problemas em tempo real.</li>
+                    <li>Apoio à coordenação logística, garantindo o cumprimento das normas de segurança do processo seletivo.</li>
+                </ul>
             </div>
         </section>
 
@@ -205,13 +207,13 @@
             
             <div class="card">
                 <h3><i class="fa-solid fa-chart-line"></i> Monitoramento Avançado: Grafana + API PRTG</h3>
-                <p>Construção de dashboards dinâmicos no Grafana consumindo a API nativa do PRTG Network Monitor. Foco em monitoramento em tempo real de infraestrutura de TI (VLANs, NGFW FortiGate, F5 WAF e Servidores Windows), eliminando a necessidade de bancos de dados intermediários.</p>
+                <p>Dashboards e telas de NOC em tempo real para FortiGate, F5, switches Cisco e servidores Windows, consumindo diretamente a API REST do PRTG. A V2 traz um intermediário em Python com fila e cache, topologia animada para TV e modo demonstração com dados fictícios.</p>
                 <a href="https://github.com/FlavioGabriel2030/Grafana-API-do-PRTG-Network-Monitor" target="_blank" style="color: var(--accent);">Ver no GitHub &rarr;</a>
             </div>
 
             <div class="card">
                 <h3><i class="fa-solid fa-terminal"></i> WinOptimizer-Pro</h3>
-                <p>Script de automação desenvolvido em PowerShell/Batch voltado para a otimização de performance e limpeza profunda do Windows. Foco na redução de processos em segundo plano.</p>
+                <p>Script Batch de manutenção do Windows: verifica privilégios de administrador, executa SFC e DISM, limpa o cache DNS e arquivos temporários, agenda o CHKDSK e registra tudo em log.</p>
                 <a href="https://github.com/FlavioGabriel2030/WinOptimizer-Pro" target="_blank" style="color: var(--accent);">Ver no GitHub &rarr;</a>
             </div>
             
@@ -226,24 +228,24 @@
             <h2 class="section-title">Cursos e Certificações</h2>
             <div class="certs-grid">
                 <div class="cert-card">
-                    <h4>Solve It with SQL</h4>
-                    <p>Oracle Academy Cloud Program (2026)</p>
+                    <h4>Sistema Eletrônico de Informações – SEI! USAR</h4>
+                    <p>Enap · 20h · mai/2026</p>
                 </div>
                 <div class="cert-card">
-                    <h4>Sistema Eletrônico de Informações - SEI</h4>
-                    <p>Enap (2026)</p>
+                    <h4>Solve It with SQL (Oracle APEX e banco de dados)</h4>
+                    <p>Oracle Academy · 25h · certificado de participação · mai/2026</p>
                 </div>
                 <div class="cert-card">
                     <h4>Introduction to Cybersecurity</h4>
-                    <p>Cisco Networking Academy (2026)</p>
+                    <p>Cisco Networking Academy · mar/2026</p>
                 </div>
                 <div class="cert-card">
-                    <h4>Técnico em Informática</h4>
-                    <p>Prime Cursos (2026)</p>
+                    <h4>Curso livre de Informática: montagem, manutenção e redes</h4>
+                    <p>Prime Cursos · 40h · jan/2026</p>
                 </div>
                 <div class="cert-card">
                     <h4>Edição de Fotos e Vídeos Pleno</h4>
-                    <p>Fundação Bradesco (2021)</p>
+                    <p>Fundação Bradesco · 2021</p>
                 </div>
                 <div class="cert-card">
                     <h4>Oratória e Comunicação</h4>
@@ -266,7 +268,7 @@
 
     <script>
         // 1. Efeito Máquina de Escrever
-        const textToType = "Estagiário de TI no Confea | Estudante de Ciência da Computação";
+        const textToType = "Infraestrutura de TI & Redes | Estagiário no Confea";
         const typeContainer = document.getElementById('typewriter-text');
         let index = 0;
 

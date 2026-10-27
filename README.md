@@ -8,10 +8,10 @@ Sou estudante de Ciência da Computação apaixonado por otimizar recursos e sol
 ### 📁 Estrutura do Repositório
 Para facilitar a navegação e a compreensão da minha trajetória, os projetos estão organizados nas seguintes categorias:
 
-* 🏢 `/experiencia-profissional`: Soluções desenvolvidas em ambientes corporativos focadas em problemas reais (ex: Integração Grafana/PRTG).
 * 🚀 `/pessoais`: Ferramentas, scripts de automação (Shell/Batch) e projetos criados por interesse independente.
-* 🎓 `/academicos`: Desafios de engenharia de software e arquitetura de computadores desenvolvidos durante a graduação (ex: Calculadora MARIE).
-* 🖼️ `/assets`: Pasta estrutural contendo imagens, diagramas e mídias de apoio deste portfólio.
+* 🎓 `/academicos`: Atividades e desafios desenvolvidos durante a graduação.
+
+Os projetos maiores ficam em repositórios próprios: [Grafana + API do PRTG](https://github.com/FlavioGabriel2030/Grafana-API-do-PRTG-Network-Monitor), [WinOptimizer-Pro](https://github.com/FlavioGabriel2030/WinOptimizer-Pro) e [Calculadora MARIE](https://github.com/FlavioGabriel2030/CALCULADORA-MARIE-ASSEMBLE).
 
 ---
 
@@ -22,7 +22,7 @@ Para facilitar a navegação e a compreensão da minha trajetória, os projetos 
 * **Tecnologias:** Grafana, PRTG, Python, APIs REST, JSON/CSV.
 
 **2. Otimizador de Windows (Batch Script)**
-* **Descrição:** Script customizado desenvolvido para limpeza profunda, eliminação de arquivos temporários e ganho de performance em sistemas operacionais Windows. Focado em ambientes de manutenção profissional para agilizar a entrega de máquinas otimizadas.
+* **Descrição:** Script Batch de manutenção do Windows: verifica privilégios de administrador, executa SFC e DISM, limpa o cache DNS e arquivos temporários, agenda o CHKDSK e registra tudo em log.
 * **Tecnologias:** Shell/Batch, Windows OS.
 
 **3. Website Pessoal (Versão 1.0)**
